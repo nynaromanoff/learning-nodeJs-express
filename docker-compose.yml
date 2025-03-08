@@ -4,8 +4,8 @@ services:
     container_name: db_postgres
     environment:
       - POSTGRESQL_USERNAME=postgres
-      - POSTGRESQL_PASSWORD=1234567
-      - POSTGRESQL_DATABASE=api-vendas
+      - POSTGRESQL_PASSWORD=postgres
+      - POSTGRESQL_DATABASE=postgres
     ports:
       - "5434:5434"
     volumes:

@@ -10,11 +10,11 @@ const envSchema = z.object({
   API_URL: z.string().default('http://localhost:3333'),
   DB_TYPE: z.literal('postgres').default('postgres'),
   DB_HOST: z.string().default('localhost'),
-  DB_PORT: z.coerce.number().default(5432),
+  DB_PORT: z.coerce.number().default(5434),
   DB_SCHEMA: z.string().default('public'),
-  DB_NAME: z.string().default('api-vendas'),
+  DB_NAME: z.string().default('postgres'),
   DB_USERNAME: z.string().default('postgres'),
-  DB_PASSWORD: z.string().default('1234567')  
+  DB_PASSWORD: z.string().default('postgres')  
   // DATABASE_URL: z.string().default('')
 })
 
